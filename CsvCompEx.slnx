@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CsvCompEx/CsvCompEx.csproj" />
+  <Project Path="CsvHelpWpf/CsvHelpWpf.csproj" />
+</Solution>
