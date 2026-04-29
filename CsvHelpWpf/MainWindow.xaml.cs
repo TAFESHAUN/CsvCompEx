@@ -26,5 +26,21 @@ namespace CsvHelpWpf
 
             dgCsvPersonData.ItemsSource = importedPesons;
         }
+
+        private void CSVPersonData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        { 
+
+            if (dgCsvPersonData.SelectedItem is CsvPersonData selectedPerson)
+            {
+                //MessageBox.Show($"Hey you click on {selectedPerson.Name}");
+                //LETS update OUR FORM x:Name
+                fnameTxtBox.Text = selectedPerson.Name;
+                genderTxtBox.Text = selectedPerson.Gender;
+                ageTxtBox.Text = $"{selectedPerson.Age}";//selectedPerson.Age.ToString(); //AGE is int
+
+                birthdayYear.Content = $"Birthday Year: {selectedPerson.BirthdayYear}";
+            }
+        }
+
     }
 }

@@ -5,11 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CsvHelpWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!-- DataGrid Start -->
         <DataGrid x:Name="dgCsvPersonData" AutoGenerateColumns="True"
                   ItemsSource="{Binding}"
-                  Margin="22,22,22,22"/>
+                  Margin="22,22,22,22"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  IsReadOnly="True"
+                  SelectionChanged="CSVPersonData_SelectionChanged"
+                  Grid.Row="0"
+                  />
+        <!-- DataGrid End -->
 
+        <!--Form Start -->
+        <Border Grid.Row="1" Padding="10" BorderBrush="Coral" BorderThickness="2">
+            <StackPanel Background="Wheat" Margin="10,10,10,10">
+                <Label Content="Person Form" HorizontalAlignment="Center" FontFamily="Showcard Gothic" FontSize="24">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFAD470B"/>
+                            <GradientStop Color="#FF21EB74" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <TextBlock Text="First Name" />
+                <TextBox x:Name="fnameTxtBox" Width="200" Margin="0,0,0,10" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Gender" />
+                <TextBox x:Name="genderTxtBox" Width="200" Margin="0,0,0,10" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Age" />
+                <TextBox x:Name="ageTxtBox" Width="200" Margin="0,0,0,10" HorizontalAlignment="Left"/>
+                <Label Content="" Height="77" Width="725" FontFamily="Jokerman" FontSize="48" x:Name="birthdayYear">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFF00F6" Offset="0"/>
+                            <GradientStop Color="#FFFFE204" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+
+
+            </StackPanel>
+        </Border>
+        <!--Form End -->
     </Grid>
 </Window>
