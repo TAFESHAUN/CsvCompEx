@@ -1,6 +1,7 @@
 ﻿using CsvHelper;
-using System.Globalization;
+using CsvHelper.Configuration;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO; //USING Statements Not using File BUT can use it lets add it anyway
 
 namespace CsvCompEx
@@ -61,6 +62,42 @@ namespace CsvCompEx
             }
                 //Return that List
                 return myRecords;
+        }
+
+        //Generic IMPORT of CSV file path
+        //FIX: Maybe this should be an interface 
+        public static List<T> ImportRecords<T, TMap>(string filePath)
+            where TMap : ClassMap
+        {
+            List<T> records = new List<T>();
+
+            using (var reader = new StreamReader(filePath))
+            {
+                using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                {
+                    csv.Context.RegisterClassMap(Activator.CreateInstance<TMap>());
+                    csv.Read();
+                    csv.ReadHeader();
+
+                    while (csv.Read())
+                    {
+                        T? record = csv.GetRecord<T>();
+                        if (record != null)
+                            records.Add(record);
+                    }
+                }
+            }
+            return records;
+        }
+
+        //CREATE records is the change to default mapping to be the specific mapping we want
+        public static List<AustraliaPlace> ImportPlaces(string filePath)
+        {
+            return ImportRecords<AustraliaPlace, AustraliaPlaceMapper>(filePath);
+        }
+        public static List<AustraliaTouristSpot> ImportTouristPlaces(string filePath)
+        {
+            return ImportRecords<AustraliaTouristSpot, AustraliaTouristSpotMapper>(filePath);
         }
 
 

@@ -1,0 +1,101 @@
+Id,Name,State,Population,Description
+1,Sydney,New South Wales,5312000,Largest city in Australia and home to the iconic Opera House and Harbour Bridge
+2,Melbourne,Victoria,5078000,Cultural capital of Australia known for coffee laneways and sport
+3,Brisbane,Queensland,2514000,Sunny river city and gateway to the Gold Coast and Sunshine Coast
+4,Perth,Western Australia,2085000,Isolated but vibrant city on the Indian Ocean with stunning beaches
+5,Adelaide,South Australia,1376000,Festival city surrounded by world-class wine regions and gulf beaches
+6,Gold Coast,Queensland,679000,Theme park and surf capital stretching along 57 kilometres of coastline
+7,Canberra,Australian Capital Territory,452000,Australia's purpose-built capital city and home to Parliament House
+8,Newcastle,New South Wales,322000,Former steel city transformed into a vibrant arts and surf destination
+9,Wollongong,New South Wales,302000,Coastal city nestled between the Illawarra Escarpment and the Pacific Ocean
+10,Sunshine Coast,Queensland,333000,Relaxed beachside region north of Brisbane with hinterland rainforest
+11,Geelong,Victoria,276000,Victoria's second largest city on Corio Bay with a revitalised waterfront
+12,Hobart,Tasmania,228000,Australia's second oldest city at the foot of kunanyi Mount Wellington
+13,Townsville,Queensland,180000,Tropical northern Queensland city gateway to Magnetic Island and the reef
+14,Cairns,Queensland,150000,Tropical hub for Great Barrier Reef adventures and Daintree exploration
+15,Darwin,Northern Territory,147000,Australia's most northerly capital city with a rich multicultural culture
+16,Toowoomba,Queensland,114000,Garden city on the edge of the Great Dividing Range with stunning parks
+17,Ballarat,Victoria,113000,Historic gold rush city with preserved Victorian architecture and Sovereign Hill
+18,Bendigo,Victoria,100000,Gold rush heritage city with world-class art gallery and Chinese heritage
+19,Launceston,Tasmania,87000,Tasmania's second city at the head of the Tamar Valley wine region
+20,Mackay,Queensland,80000,Sugar capital of Australia surrounded by tropical beaches and reef islands
+21,Rockhampton,Queensland,83000,Beef capital of Australia on the Fitzroy River at the Tropic of Capricorn
+22,Bunbury,Western Australia,74000,Thriving regional port city south of Perth famous for dolphin watching
+23,Bundaberg,Queensland,70000,Home of Bundaberg Rum and gateway to the southern Great Barrier Reef
+24,Wagga Wagga,New South Wales,63000,Largest inland city in New South Wales on the banks of the Murrumbidgee
+25,Hervey Bay,Queensland,56000,Whale watching capital of Australia and gateway to Fraser Island
+26,Shepparton,Victoria,65000,Irrigation region hub and fruit bowl of Victoria in the Goulburn Valley
+27,Port Macquarie,New South Wales,48000,Beautiful coastal city at the mid-north coast with beaches and koalas
+28,Tamworth,New South Wales,42000,Country music capital of Australia in the New England region
+29,Orange,New South Wales,41000,Cool-climate wine region city in the Central Tablelands of New South Wales
+30,Dubbo,New South Wales,39000,Regional hub of western New South Wales with Taronga Western Plains Zoo
+31,Albury,New South Wales,52000,Border city on the Murray River paired with Wodonga across the border
+32,Wodonga,Victoria,39000,Victorian border city paired with Albury on the Murray River
+33,Mildura,Victoria,32000,Irrigation oasis on the Murray River famous for dried fruit and wine
+34,Bathurst,New South Wales,36000,Australia's oldest inland city and home of the famous Mount Panorama circuit
+35,Gladstone,Queensland,34000,Major industrial port city on Curtis Island in central Queensland
+36,Broken Hill,New South Wales,18000,Remote outback mining city and open-air art gallery in far west NSW
+37,Alice Springs,Northern Territory,26000,Remote desert town at the heart of Australia near Uluru and MacDonnell Ranges
+38,Broome,Western Australia,14000,Pearling port town with Cable Beach and multicoloured dinosaur footprints
+39,Esperance,Western Australia,14000,Remote coastal town with strikingly white beaches and turquoise waters
+40,Albany,Western Australia,35000,Historic whaling town on a stunning harbour at the foot of Western Australia
+41,Geraldton,Western Australia,39000,Mid-west coastal city with world-class windsurfing and wildflower country
+42,Kalgoorlie,Western Australia,28000,Gold mining city in the outback with the famous Super Pit open cut mine
+43,Devonport,Tasmania,26000,Gateway to Tasmania with the Spirit of Tasmania ferry terminal
+44,Burnie,Tasmania,19000,Coastal industrial city in northwest Tasmania transforming into an arts hub
+45,Mount Gambier,South Australia,28000,Volcanic crater lake city on the South Australian border with Victoria
+46,Whyalla,South Australia,21000,Steel city on Spencer Gulf in South Australia's upper Spencer region
+47,Port Augusta,South Australia,14000,Crossroads of Australia where the outback meets the sea in South Australia
+48,Port Pirie,South Australia,14000,Historic smelting city on Spencer Gulf with rich industrial heritage
+49,Victor Harbor,South Australia,15000,Popular holiday town on the Fleurieu Peninsula south of Adelaide
+50,Murray Bridge,South Australia,18000,Murray River town with a new water park and proximity to Monarto Safari Park
+51,Nowra,New South Wales,34000,Southern gateway city to the Shoalhaven region and Jervis Bay
+52,Lismore,New South Wales,43000,Northern Rivers regional centre near Byron Bay and rainforest hinterland
+53,Armidale,New South Wales,25000,University city on the New England Tablelands known for waterfalls and gorges
+54,Coffs Harbour,New South Wales,74000,Mid-north coast city famous for banana growing and family-friendly beaches
+55,Griffith,New South Wales,25000,Irrigation and winemaking city in the Riverina region of New South Wales
+56,Queanbeyan,New South Wales,43000,Border city adjacent to Canberra with strong ties to the national capital
+57,Goulburn,New South Wales,22000,Australia's first inland city on the Southern Tablelands with wool heritage
+58,Lithgow,New South Wales,12000,Former coalmining city in the Blue Mountains foothills with industrial history
+59,Cessnock,New South Wales,23000,Gateway to the Hunter Valley wine region in New South Wales
+60,Maitland,New South Wales,82000,Historic river city in the Hunter Valley with heritage streetscapes
+61,Lake Macquarie,New South Wales,207000,Australia's largest saltwater coastal lake south of Newcastle
+62,Port Stephens,New South Wales,71000,Stunning bay destination north of Newcastle famous for dolphin watching
+63,Ballina,New South Wales,28000,Northern Rivers coastal town known as the gateway to Byron Bay
+64,Tweed Heads,New South Wales,57000,Border town sharing the Gold Coast strip with Queensland across the Tweed
+65,Byron Bay,New South Wales,10000,Iconic coastal village at Australia's most easterly point and lifestyle hub
+66,Kiama,New South Wales,22000,Charming coastal town on the Illawarra coast famous for its blowhole
+67,Batemans Bay,New South Wales,12000,Popular holiday destination at the mouth of the Clyde River on the south coast
+68,Merimbula,New South Wales,3500,Sapphire Coast holiday town known for oysters beaches and whale watching
+69,Eden,New South Wales,3000,Southernmost NSW coastal town and base for Ben Boyd National Park
+70,Broken Hill,New South Wales,18000,Remote silver city in far western NSW with rich mining and arts history
+71,Inverell,New South Wales,10000,Sapphire mining and agricultural centre on the New England Tablelands
+72,Moree,New South Wales,8000,Artesian hot springs spa town in the northwestern plains of New South Wales
+73,Parkes,New South Wales,11000,Home of the famous Dish telescope and the annual Elvis Festival
+74,Forbes,New South Wales,9000,Historic gold rush town on the Lachlan River in central New South Wales
+75,Cowra,New South Wales,9500,Site of the famous World War Two Japanese prisoner of war breakout
+76,Young,New South Wales,7000,Cherry capital of Australia in the Hilltops wine region of New South Wales
+77,Cootamundra,New South Wales,7000,Birthplace of cricket legend Don Bradman in the central-south of NSW
+78,Tumut,New South Wales,6000,Snowy Mountains gateway town on the Tumut River with great trout fishing
+79,Cooma,New South Wales,7000,Gateway to the Snowy Mountains ski fields and Kosciuszko National Park
+80,Jindabyne,New South Wales,5000,Alpine lake town and primary base for Thredbo and Perisher ski resorts
+81,Katoomba,New South Wales,8000,Blue Mountains main town perched above the Jamison Valley and Three Sisters
+82,Bowral,New South Wales,12000,Southern Highlands elegant country town and home of the Bradman Museum
+83,Mittagong,New South Wales,6500,Northern gateway to the Southern Highlands and heritage village atmosphere
+84,Moss Vale,New South Wales,7000,Southern Highlands town known for antique shops and cool climate gardens
+85,Mudgee,New South Wales,11000,Charming wine region town in the Central Ranges with heritage streetscapes
+86,Deniliquin,New South Wales,8000,Murray region town that hosts the world's largest ute muster each year
+87,Hay,New South Wales,3000,Flat outback town on the Murrumbidgee in the vast Riverina plain
+88,Bourke,New South Wales,2500,Outback town at the gateway to the true Australian outback on the Darling
+89,Walgett,New South Wales,2000,Opal fossicking hub near Lightning Ridge in northern New South Wales
+90,Lightning Ridge,New South Wales,1700,Famous black opal mining town in the far northwest of New South Wales
+91,Nyngan,New South Wales,2500,Geographic centre of New South Wales in the central-west of the state
+92,Cobar,New South Wales,4500,Copper mining outback town in the far west of New South Wales
+93,Tibooburra,New South Wales,200,Remote corner of NSW in the Sturt National Park at the Queensland border
+94,Wilcannia,New South Wales,600,Historic river port town on the Darling River in far western New South Wales
+95,White Cliffs,New South Wales,100,Underground opal mining village in the far west of New South Wales
+96,Silverton,New South Wales,50,Ghost town outside Broken Hill famous as a film and TV location
+97,Menindee,New South Wales,500,Gateway to the Kinchega National Park and the Menindee Lakes system
+98,Ivanhoe,New South Wales,200,Tiny outback town at the geographic centre of New South Wales
+99,Tilpa,New South Wales,20,One of the smallest towns in NSW on the Darling River in the outback
+100,Milparinka,New South Wales,20,Remote historic gold rush village near Tibooburra in the Corner Country

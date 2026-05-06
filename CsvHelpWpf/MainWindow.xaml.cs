@@ -1,4 +1,5 @@
 ﻿using CsvCompEx;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace CsvHelpWpf
 {
@@ -17,14 +19,31 @@ namespace CsvHelpWpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        public List<CsvPersonData> importedPesons = new List<CsvPersonData>();
+        public List<CsvPersonData> importedPersons = new List<CsvPersonData>();
+
+        //NEW CSV for AU places
+        public List<AustraliaPlace> auPlaces = CsvImporter.ImportPlaces("australia-100-places.csv");
+        public List<AustraliaTouristSpot> auTouristSpots = CsvImporter.ImportTouristPlaces("australia-tourist-spots.csv");
+
+        //Interface for sorting, filtering, grouping, etc. of the data in the UI
+        //CollectionView wraps around a List
+        private ICollectionView? _personView;
+
+        private ICollectionView? _placeView;
+
+        //private ICollectionView? _touristView;
 
         public MainWindow()
         {
             InitializeComponent();
-            importedPesons = CsvImporter.ImportSomeRecords("some-data.csv");
+            importedPersons = CsvImporter.ImportSomeRecords("some-data.csv");
 
-            dgCsvPersonData.ItemsSource = importedPesons;
+            //List wraps CollectionView and binds to DG
+            _personView = CollectionViewSource.GetDefaultView(importedPersons);
+
+            _placeView = CollectionViewSource.GetDefaultView(auTouristSpots);
+            //dgCsvPersonData.ItemsSource = importedPersons;
+            dgCsvPersonData.ItemsSource = auTouristSpots;
         }
 
         private void CSVPersonData_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -38,9 +57,33 @@ namespace CsvHelpWpf
                 genderTxtBox.Text = selectedPerson.Gender;
                 ageTxtBox.Text = $"{selectedPerson.Age}";//selectedPerson.Age.ToString(); //AGE is int
 
-                birthdayYear.Content = $"Birthday Year: {selectedPerson.BirthdayYear}";
+                birthdayYear.Content = $"{selectedPerson.Id}.Birthday Year: {selectedPerson.BirthdayYear}";
             }
         }
 
+        private void FilterTxtBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //If empty we can't find anything so just return > save resources
+            if (_placeView == null) return;
+
+            string filterText = filterTxtBox.Text.ToLower();
+
+            // If the box is empty > remove the filter THEN show everything
+            if (string.IsNullOrWhiteSpace(filterText))
+            {
+                _placeView.Filter = null;
+            }
+            else
+            {
+                // Returns true = show, false = hide > Filter Props
+                _placeView.Filter = item =>
+                {
+                    if (item is AustraliaTouristSpot place)
+                        return place.State != null &&
+                               place.State.ToLower().Contains(filterText);
+                    return false;
+                };
+            }
+        }
     }
 }

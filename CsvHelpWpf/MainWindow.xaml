@@ -8,9 +8,18 @@
         Title="MainWindow" Height="800" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        <!-- Filter Bar -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="22,10,22,4">
+            <TextBlock Text="Filter by Name:" VerticalAlignment="Center" Margin="0,0,8,0"/>
+            <TextBox x:Name="filterTxtBox"
+                     Width="200"
+                     TextChanged="FilterTxtBox_TextChanged"/>
+        </StackPanel>
+
         <!-- DataGrid Start -->
         <DataGrid x:Name="dgCsvPersonData" AutoGenerateColumns="True"
                   ItemsSource="{Binding}"
@@ -19,12 +28,12 @@
                   SelectionUnit="FullRow"
                   IsReadOnly="True"
                   SelectionChanged="CSVPersonData_SelectionChanged"
-                  Grid.Row="0"
+                  Grid.Row="1"
                   />
         <!-- DataGrid End -->
 
         <!--Form Start -->
-        <Border Grid.Row="1" Padding="10" BorderBrush="Coral" BorderThickness="2">
+        <Border Grid.Row="2" Padding="10" BorderBrush="Coral" BorderThickness="2">
             <StackPanel Background="Wheat" Margin="10,10,10,10">
                 <Label Content="Person Form" HorizontalAlignment="Center" FontFamily="Showcard Gothic" FontSize="24">
                     <Label.Foreground>
